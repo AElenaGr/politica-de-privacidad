@@ -1,15 +1,57 @@
-/* src/styles/index.css */
 .content {
   padding: 20px;
-  font-family: -apple-system, Roboto, sans-serif, serif;
 }
 
-.content h1 {
-  color: #232129;
-  font-size: 2rem;
+h1 {
+  font-size: 2.5rem;
+  color: #b41400; /* Color primario */
 }
 
-.content p {
-  color: #555;
+h3 {
+  font-size: 1.8rem;
+  color: #343a40; /* Color oscuro */
+}
+
+p {
   font-size: 1rem;
+  line-height: 1.6;
+  color: #495057;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #343a40;
+}
+
+
+/* src/styles/index.css */
+.links {
+  margin-top: 30px;
+}
+
+.links h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.links ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links ul li {
+  margin-bottom: 10px;
+}
+
+.links ul li a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.links ul li a:hover {
+  text-decoration: underline;
 }

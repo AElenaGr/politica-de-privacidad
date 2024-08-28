@@ -1,8 +1,9 @@
 // src/pages/casa-real.js
-import * as React from "react"
-import Header from "../components/Header"
-import Menu from "../components/Menu"
-import "../styles/casa-real.css"
+import * as React from "react";
+import Header from "../components/Header";
+import Menu from "../components/Menu";
+import CasaRey from "../components/CasaRey"; // Asegúrate de crear este componente
+import "../styles/casa-real.css"; // Asegúrate de que el CSS esté bien configurado
 
 const CasaRealPage = () => {
   return (
@@ -10,15 +11,12 @@ const CasaRealPage = () => {
       <Header />
       <Menu />
       <section className="content">
-        <h1>Casa de S.M. el Rey</h1>
-        <p>
-          Aquí va el contenido sobre la Casa de S.M. el Rey y su relación con el Patrimonio Nacional...
-        </p>
+        <CasaRey />
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default CasaRealPage
+export default CasaRealPage;
 
-export const Head = () => <title>Casa de S.M. el Rey</title>
+export const Head = () => <title>Casa de S.M. el Rey</title>;

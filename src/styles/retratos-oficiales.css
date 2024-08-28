@@ -1,0 +1,49 @@
+/* src/styles/retratos-oficiales.css */
+.retrato-oficiales {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.retrato-oficiales h1,
+.retrato-oficiales h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.retrato-oficiales h2 {
+  margin-top: 40px;
+}
+
+.retrato {
+  margin-bottom: 40px;
+}
+
+.retrato img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.retrato p {
+  font-size: 1.125em;
+  line-height: 1.6;
+}
+
+.retrato a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.retrato a:hover {
+  text-decoration: underline;
+}
+
+.aviso-legal {
+  margin-top: 40px;
+  font-size: 1.125em;
+}

@@ -1,8 +1,9 @@
 // src/pages/actos.js
-import * as React from "react"
-import Header from "../components/Header"
-import Menu from "../components/Menu"
-import "../styles/actos.css"
+import React from 'react';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
+import ActosOficiales from '../components/ActosOficiales';  // Importa el nuevo componente
+import '../styles/actosOficiales.css';  // Asegúrate de que este archivo exista y tenga los estilos necesarios
 
 const ActosPage = () => {
   return (
@@ -10,15 +11,12 @@ const ActosPage = () => {
       <Header />
       <Menu />
       <section className="content">
-        <h1>Actos Oficiales e Institucionales</h1>
-        <p>
-          Aquí va el contenido sobre los actos oficiales e institucionales organizados por el Patrimonio Nacional...
-        </p>
+        <ActosOficiales />  {/* Usa el componente aquí */}
       </section>
     </main>
-  )
-}
+  );
+};
 
-export default ActosPage
+export default ActosPage;
 
-export const Head = () => <title>Actos Oficiales e Institucionales</title>
+export const Head = () => <title>Actos Oficiales e Institucionales</title>;

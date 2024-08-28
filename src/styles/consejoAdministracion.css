@@ -1,0 +1,80 @@
+/* consejoAdministracion.css */
+
+.consejo-administracion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.consejo-administracion h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #002147;
+  text-align: center;
+  border-bottom: 2px solid #002147;
+  padding-bottom: 10px;
+}
+
+.consejo-administracion h2 {
+  font-size: 2em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #0056b3;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.miembro {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.miembro h3 {
+  font-size: 1.75em;
+  margin-bottom: 10px;
+  color: #003366;
+}
+
+.miembro h4 {
+  font-size: 1.25em;
+  margin-bottom: 10px;
+  color: #666;
+  font-weight: normal;
+}
+
+.miembro p {
+  font-size: 1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .consejo-administracion {
+    padding: 10px;
+  }
+
+  .consejo-administracion h1 {
+    font-size: 2em;
+  }
+
+  .consejo-administracion h2 {
+    font-size: 1.75em;
+  }
+
+  .miembro h3 {
+    font-size: 1.5em;
+  }
+
+  .miembro h4 {
+    font-size: 1.1em;
+  }
+
+  .miembro p {
+    font-size: 0.95em;
+  }
+}

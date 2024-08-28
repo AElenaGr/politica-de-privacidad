@@ -62,3 +62,44 @@
     padding: 0.5rem;
   }
 }
+
+
+/* src/styles/menu.css */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-brand {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 1em;
+  color: #0056b3;
+}
+
+.nav-link:hover {
+  color: #003d7a;
+}
+
+.navbar-nav {
+  flex-direction: row;
+}
+
+.nav-item {
+  margin-left: 1rem;
+}
+
+.navbar-nav .nav-item:first-child {
+  margin-left: 0;
+}

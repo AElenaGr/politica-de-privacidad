@@ -1,8 +1,36 @@
 /* src/styles/casa-real.css */
-.content h1 {
-  color: #0D96F2;
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
 }
 
-.content p {
-  color: #666;
+.casa-rey {
+  margin: 20px 0;
+}
+
+.casa-rey h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.casa-rey p {
+  font-size: 1.125em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.casa-rey p:last-child {
+  margin-bottom: 0;
+}
+
+.casa-rey a {
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.casa-rey a:hover {
+  text-decoration: underline;
 }

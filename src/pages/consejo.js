@@ -1,24 +1,20 @@
-// src/pages/consejo.js
-import * as React from "react"
-import Header from "../components/Header"
-import Menu from "../components/Menu"
-import "../styles/consejo.css"
+import React from 'react';
+import Header from '../components/Header';
+import Menu from '../components/Menu';
+import ConsejoAdministracion from '../components/ConsejoAdministracion';
 
 const ConsejoPage = () => {
   return (
     <main>
-      <Header />
-      <Menu />
-      <section className="content">
-        <h1>Consejo de Administración</h1>
-        <p>
-          Aquí va el contenido sobre el Consejo de Administración del Patrimonio Nacional...
-        </p>
-      </section>
+      <header>
+        <Header />
+        <Menu />
+      </header>
+      <ConsejoAdministracion />
     </main>
-  )
-}
+  );
+};
 
-export default ConsejoPage
+export default ConsejoPage;
 
-export const Head = () => <title>Consejo de Administración</title>
+export const Head = () => <title>Consejo de Administración | Patrimonio Nacional</title>;

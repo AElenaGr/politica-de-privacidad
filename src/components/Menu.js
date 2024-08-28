@@ -1,3 +1,4 @@
+// src/components/Menu.js
 import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,11 +13,8 @@ const Menu = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light">
       <div className="container">
-        <Link className="navbar-brand" to="/">
-          Mi Sitio
-        </Link>
         <button
           className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`}
           type="button"
@@ -28,7 +26,10 @@ const Menu = () => {
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
         <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <Link className="nav-link" to="/">Inicio</Link>
+            </li>
             <li className="nav-item">
               <Link className="nav-link" to="/historia">Conoce nuestra historia</Link>
             </li>
@@ -40,6 +41,9 @@ const Menu = () => {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/casa-real">Casa de S.M. el Rey</Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/retratos">Retratos Oficiales</Link>
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/ministerio">Ministerio de la Presidencia</Link>
