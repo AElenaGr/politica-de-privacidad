@@ -1,0 +1,15 @@
+/* src/styles/seccionEspecial.css */
+.container-fluid {
+  background-color: #f8f9fa;
+  padding: 5rem 0;
+}
+
+h2 {
+  color: #b41400;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.15rem;
+  color: #343a40;
+}

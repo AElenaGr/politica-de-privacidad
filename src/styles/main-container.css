@@ -1,0 +1,22 @@
+/* src/styles/main-container.css */
+.main-container {
+  z-index: 1;
+  position: relative;
+  background: #fff;
+  padding-top: 93px;
+  color: #282828;
+  font-family: 'Georgia', serif;
+}
+
+.main-container h1, .main-container h2, .main-container h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
+
+.main-container p {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+  color: #6c757d;
+}

@@ -1,0 +1,15 @@
+/* src/styles/index.css */
+.content {
+  padding: 20px;
+  font-family: -apple-system, Roboto, sans-serif, serif;
+}
+
+.content h1 {
+  color: #232129;
+  font-size: 2rem;
+}
+
+.content p {
+  color: #555;
+  font-size: 1rem;
+}

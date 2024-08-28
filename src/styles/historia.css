@@ -1,0 +1,19 @@
+/* src/styles/historia.css */
+.container {
+  margin-top: 50px;
+}
+
+h2 {
+  color: #343a40;
+  font-weight: bold;
+}
+
+.lead {
+  font-size: 1.25rem;
+  color: #6c757d;
+}
+
+img {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
