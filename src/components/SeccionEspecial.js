@@ -1,6 +1,5 @@
-// src/pages/SeccionEspecial.js
-import React from "react";
-import "../styles/seccionEspecial.css";
+import React from 'react';
+import '../styles/seccionEspecial.css';
 
 const SeccionEspecial = () => {
   return (

@@ -1,8 +1,8 @@
-// src/components/Menu.js
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
-import "../styles/menu.css";
+import React, { useState } from 'react';
+import { Link } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import '../styles/menu.css';
 
 const Menu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,35 +14,35 @@ const Menu = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <a className="navbar-brand" href="/">
+        <Link className="navbar-brand" to="/">
           Mi Sitio
-        </a>
+        </Link>
         <button
-          className={`navbar-toggler ${isOpen ? "" : "collapsed"}`}
+          className={`navbar-toggler ${isOpen ? '' : 'collapsed'}`}
           type="button"
           aria-controls="navbarNav"
-          aria-expanded={isOpen ? "true" : "false"}
+          aria-expanded={isOpen ? 'true' : 'false'}
           aria-label="Toggle navigation"
           onClick={toggleMenu}
         >
           <FontAwesomeIcon icon={isOpen ? faTimes : faBars} />
         </button>
-        <div className={`collapse navbar-collapse ${isOpen ? "show" : ""}`} id="navbarNav">
+        <div className={`collapse navbar-collapse ${isOpen ? 'show' : ''}`} id="navbarNav">
           <ul className="navbar-nav ml-auto">
             <li className="nav-item">
-              <a className="nav-link" href="/historia">Conoce nuestra historia</a>
+              <Link className="nav-link" to="/historia">Conoce nuestra historia</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/consejo">Consejo de Administración</a>
+              <Link className="nav-link" to="/consejo">Consejo de Administración</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/actos">Actos oficiales e institucionales</a>
+              <Link className="nav-link" to="/actos">Actos oficiales e institucionales</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/casa-real">Casa de S.M. el Rey</a>
+              <Link className="nav-link" to="/casa-real">Casa de S.M. el Rey</Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/ministerio">Ministerio de la Presidencia</a>
+              <Link className="nav-link" to="/ministerio">Ministerio de la Presidencia</Link>
             </li>
           </ul>
         </div>

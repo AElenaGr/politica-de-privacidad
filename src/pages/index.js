@@ -1,8 +1,8 @@
-// src/pages/index.js
 import React from 'react';
+import { Link } from 'gatsby';
 import '../styles/index.css';
-import Header from '../components/Header'; // Ajusta la ruta según sea necesario
-import Menu from '../components/Menu';     // Ajusta la ruta según sea necesario
+import Header from '../components/Header';
+import Menu from '../components/Menu';
 
 const IndexPage = () => {
   return (

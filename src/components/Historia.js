@@ -1,6 +1,5 @@
-// src/pages/Historia.js
-import React from "react";
-import "../styles/historia.css";
+import React from 'react';
+import '../styles/historia.css';
 
 const Historia = () => {
   return (
