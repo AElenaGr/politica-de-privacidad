@@ -4,6 +4,7 @@ import Header from "../components/Header";
 import Menu from "../components/Menu";
 import CasaRey from "../components/CasaRey"; // Asegúrate de crear este componente
 import "../styles/casa-real.css"; // Asegúrate de que el CSS esté bien configurado
+import Footer from "../components/Footer";
 
 const CasaRealPage = () => {
   return (
@@ -13,6 +14,7 @@ const CasaRealPage = () => {
       <section className="content">
         <CasaRey />
       </section>
+      <Footer />
     </main>
   );
 };

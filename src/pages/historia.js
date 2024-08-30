@@ -4,6 +4,7 @@ import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Historia from '../components/Historia';
 import '../styles/historia.css';  // Asegúrate de que el CSS esté correcto
+import Footer from '../components/Footer';
 
 const HistoriaPage = () => {
   return (
@@ -15,6 +16,7 @@ const HistoriaPage = () => {
       <section className="content">
         <Historia />
       </section>
+      <Footer />
     </main>
   );
 };

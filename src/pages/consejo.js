@@ -2,6 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 import Menu from '../components/Menu';
 import ConsejoAdministracion from '../components/ConsejoAdministracion';
+import Footer from '../components/Footer';
 
 const ConsejoPage = () => {
   return (
@@ -11,6 +12,7 @@ const ConsejoPage = () => {
         <Menu />
       </header>
       <ConsejoAdministracion />
+      <Footer />
     </main>
   );
 };

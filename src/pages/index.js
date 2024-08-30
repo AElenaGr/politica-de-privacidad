@@ -4,6 +4,7 @@ import { Link } from 'gatsby';
 import '../styles/index.css';
 import Header from '../components/Header';
 import Menu from '../components/Menu';
+import Footer from '../components/Footer';
 
 const IndexPage = () => {
   return (
@@ -55,6 +56,7 @@ const IndexPage = () => {
           </ul>
         </div>
       </section>
+      <Footer />
     </main>
   );
 };
