@@ -1,80 +1,89 @@
-/* consejoAdministracion.css */
-
 .consejo-administracion {
-  max-width: 1200px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  font-family: 'Arial', sans-serif;
-  color: #333;
 }
 
-.consejo-administracion h1 {
-  font-size: 2.5em;
+h1 {
   margin-bottom: 20px;
-  color: #002147;
   text-align: center;
-  border-bottom: 2px solid #002147;
-  padding-bottom: 10px;
 }
 
-.consejo-administracion h2 {
-  font-size: 2em;
+h2 {
   margin-top: 40px;
   margin-bottom: 20px;
-  color: #0056b3;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 10px;
+  text-align: center;
+}
+
+.miembro-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px; /* Limita el ancho máximo de la fila de tarjetas */
 }
 
 .miembro {
-  margin-bottom: 30px;
-  padding: 20px;
-  border-radius: 8px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0; /* Espacio superior e inferior */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: #fff;
+  box-sizing: border-box;
+}
+
+.miembro img.miembro-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
 }
 
 .miembro h3 {
-  font-size: 1.75em;
-  margin-bottom: 10px;
-  color: #003366;
+  margin-top: 10px;
+  text-align: center;
 }
 
 .miembro h4 {
-  font-size: 1.25em;
+  margin-top: 5px;
   margin-bottom: 10px;
-  color: #666;
-  font-weight: normal;
+  text-align: center;
+  color: #555;
+  font-size: 0.9em;
 }
 
 .miembro p {
-  font-size: 1em;
-  line-height: 1.6;
-  margin-bottom: 10px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #333;
 }
 
-@media screen and (max-width: 768px) {
-  .consejo-administracion {
-    padding: 10px;
+@media (min-width: 1200px) {
+  .miembro {
+    width: 23%; /* 4 tarjetas por fila */
   }
+}
 
-  .consejo-administracion h1 {
-    font-size: 2em;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .miembro {
+    width: 30%; /* 3 tarjetas por fila */
   }
+}
 
-  .consejo-administracion h2 {
-    font-size: 1.75em;
+@media (max-width: 768px) {
+  .miembro {
+    width: 45%; /* 2 tarjetas por fila */
   }
+}
 
-  .miembro h3 {
-    font-size: 1.5em;
-  }
-
-  .miembro h4 {
-    font-size: 1.1em;
-  }
-
-  .miembro p {
-    font-size: 0.95em;
+@media (max-width: 480px) {
+  .miembro {
+    width: 90%; /* 1 tarjeta por fila */
   }
 }
