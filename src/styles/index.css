@@ -55,3 +55,10 @@ p {
 .links ul li a:hover {
   text-decoration: underline;
 }
+
+.content .presidenta-img {
+  width: 350px; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Centra la imagen si es necesario */
+}

@@ -1,10 +1,10 @@
-// src/pages/index.js
 import React from 'react';
 import { Link } from 'gatsby';
 import '../styles/index.css';
 import Header from '../components/Header';
 import Menu from '../components/Menu';
 import Footer from '../components/Footer';
+import presidentaImg from '../images/presidenta.jpeg';
 
 const IndexPage = () => {
   return (
@@ -15,8 +15,10 @@ const IndexPage = () => {
       </header>
       <section className="content">
         <h1>Bienvenida de la Presidenta</h1>
+        <img src={presidentaImg} alt="ANA DE LA CUEVA FERNÁNDEZ" className="presidenta-img" />
         <h3>Ana de la Cueva, Presidenta de Patrimonio Nacional</h3>
         <p>
+          
           Bienvenidos a Patrimonio Nacional.
         </p>
         <p>
