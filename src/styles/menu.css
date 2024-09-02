@@ -1,18 +1,18 @@
 /* src/styles/menu.css */
 .navbar {
-  padding: 1rem;
-  background-color: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  padding: 1rem 2rem; /* Añadido un padding lateral más amplio */
+  background-color: #f8f9fa; /* Color de fondo más claro */
+  border-bottom: 1px solid #ddd; /* Color de borde más suave */
 }
 
 .navbar-brand {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* Tamaño de fuente para el nombre de la marca */
   font-weight: bold;
-  color: #b41400;
+  color: #b41400; /* Color del texto */
 }
 
 .navbar-brand:hover {
-  color: #8f6f24;
+  color: #8f6f24; /* Color al pasar el cursor */
 }
 
 .navbar-toggler {
@@ -33,18 +33,32 @@
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2880,80,80,0.5%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos a la derecha */
+  flex-direction: row;
+  align-items: center; /* Centra verticalmente los elementos en la fila */
+}
+
 .navbar-nav .nav-link {
-  color: #343a40;
+  color: #0056b3; /* Color del enlace */
   font-weight: 600;
   text-transform: uppercase;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1.5rem; /* Aumentado el padding para mayor espaciado */
+  font-size: 1rem; /* Tamaño de fuente consistente */
+  transition: color 0.3s ease; /* Transición suave para el color */
 }
 
 .navbar-nav .nav-link:hover {
-  color: #b41400;
+  color: #003d7a; /* Color al pasar el cursor */
+}
+
+.nav-item {
+  margin-left: 1.5rem; /* Espaciado más amplio entre los elementos */
 }
 
 .navbar-collapse {
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -56,50 +70,16 @@
   .navbar-nav {
     background-color: #ffffff;
     padding: 1rem;
+    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
   }
 
   .nav-link {
-    padding: 0.5rem;
+    padding: 0.75rem 1.5rem; /* Padding aumentado para los enlaces en pantallas pequeñas */
+    width: 100%; /* Ancho completo para los enlaces en pantallas pequeñas */
   }
-}
 
-
-/* src/styles/menu.css */
-.navbar {
-  background-color: #f8f9fa;
-  border-bottom: 1px solid #ddd;
-}
-
-.navbar-brand {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-.navbar-toggler {
-  border: none;
-}
-
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-
-.nav-link {
-  font-size: 1em;
-  color: #0056b3;
-}
-
-.nav-link:hover {
-  color: #003d7a;
-}
-
-.navbar-nav {
-  flex-direction: row;
-}
-
-.nav-item {
-  margin-left: 1rem;
-}
-
-.navbar-nav .nav-item:first-child {
-  margin-left: 0;
+  .nav-item {
+    margin: 0; /* Elimina el margen para los elementos de la lista en pantallas pequeñas */
+  }
 }
